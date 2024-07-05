@@ -1,0 +1,151 @@
+<div className='project d-flex align-items-center justify-content-center'>
+                        <div className='projectImage'>
+                            <img src={Bank} alt='Banking'/>
+                        </div>
+                        <div className='projectWork'>
+                            <h3>Banking Application</h3>
+                            <h5><span className='idea'>Mini Project</span>Java</h5>
+                            <p> 1 . Banking App: This code allows for the creation of multiple customers. The BankingApp project manages multiple customer accounts using an array of BankDetails objects. 
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>Each object represents a customer with methods for account creation, balance management, and transaction handling. It features a menu-driven interface allowing users to display all account details, search by account number, deposit funds, and withdraw funds. This project is structured for handling diverse customer interactions and scalable data management within a centralized system.</p>
+                                    </details>
+                                </span>
+                            </p>
+                            
+                            <p> 2 . Bank Application: This code allows for the creation of only one customer. The BankingApplication project focuses on a single customer's banking operations with basic functionalities like checking balance, depositing, withdrawing, and viewing transactions.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>It offers a straightforward menu-driven interface, ideal for applications needing simple customer management. This project consolidates all banking operations into a single application, providing an efficient and direct implementation for managing individual customer accounts.</p>
+                                    </details>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='project d-flex align-items-center justify-content-center'>
+                        <div className='projectImage'>
+                            <img src={Ploughing} alt='Banking'/>
+                        </div>
+                        <div className='projectWork'>
+                            <h3>Trouble Free Ploughing</h3>
+                            <h5><span className='idea'>Idea</span> PALS Technology </h5>
+                            <h5>Problem Defintion </h5>
+                            <p>  Trouble Free Ploughing overload protection systems protect against damage when the plough point encounters an obstacle . Crop yield, In ploughing contains lots of obstacles.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>
+                                            Importantly the tractor blades faces the lot of stones and rock. There is a possibility for the blades to get damaged by the mineral obstacles(rocks) in his cores of action. This leads to the inefficiency of the procedure. Thereby requiring more effort and time than needed. In the residence agriculture is the most performed activity and they are facing inconvenience in ploughing. The hydrologic processes of rainfall and runoff play an essential role in water erosion. The amount and rate of surface runoff can affect erosion and sediment transport.
+                                        </p>
+                                    </details>
+                                </span>
+                            </p>
+                            
+                            <h5>Solution </h5>
+                            <p>  A sensor used to detect the presence of rocks. Rock repellent agglomeration of hydraulic missionary.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>
+                                            It is used to remove the rock from the path.
+                                            The rock repellent uses hydraulic forces to remove the obstacles.
+                                            The Pascal’s law applied here in the form of hydraulic.
+                                            Being an agriculture relied region, people often use plough for ploughing to making it which stand lots of detriment .
+                                            This project could save the time and expenses.
+                                            Mainly benefits for usage of farmers.
+                                            It controls the crops damage and get more yield.
+                                            This is the mainly concept for advanced ploughing.
+                                            It is more efficiency in extra work.
+                                            The advanced detecting system (SENSOR) detected the rocks and unidentified objects , then ploughing machine take out the rock and filter the soil.
+                                        </p>
+                                    </details>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='project d-flex align-items-center justify-content-center'>
+                        <div className='projectImage'>
+                            <img src={ECommerce} alt='Banking'/>
+                        </div>
+                        <div className='projectWork'>
+                            <h3>E-Commerce - TECHKART</h3>
+                            <h5><span className='idea'>Hackathon </span>Front End : HTML , CSS | Back End : Python Flask | Database : MongoDB</h5>
+                            <p> TechKart is a static e-commerce platform specializing in selling furniture online. It provides a seamless and visually appealing user experience for browsing and selecting furniture.TechKart is a furniture-focused e-commerce platform featuring a fully static front end.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>Designed for an optimal user experience, it allows customers to effortlessly browse and explore various furniture options. Although it lacks dynamic features, TechKart excels in delivering a polished and intuitive interface for online furniture shopping.</p>
+                                    </details>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='project d-flex align-items-center justify-content-center'>
+                        <div className='projectImage'>
+                            <img src={Blog} alt='Banking'/>
+                        </div>
+                        <div className='projectWork'>
+                            <h3>Blog - BLOGHUB</h3>
+                            <h5><span className='idea'>Mini Project</span>Front End : HTML , CSS , JavaScript</h5>
+                            <p> Discover flexible subscription options in our Plans & Pricing module, tailored to your needs. Choose from Free, Classic (Rs. 1000), or Premium (Rs. 250) plans, each offering unique benefits like enhanced customization and priority support.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>Manage your profile, track blog analytics, and connect with like-minded individuals in the BlogHub community. Enjoy secure payment transactions and dedicated customer support for a hassle-free experience.BlogHub is user-friendly static front-end, designed for seamless creativity and easy blog management. Explore diverse topics and intuitive navigation while enjoying flexible subscription options to tailor your blogging journey. </p>
+                                    </details>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='project d-flex align-items-center justify-content-center'>
+                        <div className='projectImage'>
+                            <img src={Signal} alt='Banking'/>
+                        </div>
+                        <div className='projectWork'>
+                            <h3>Signal</h3>
+                            <h5><span className='idea'>Clone</span>Front End : HTML , CSS , JavaScript</h5>
+                            <p>Discover the static front-end of the Signal app clone, complete with download, blog, donate, work, and help pages. Navigate through encrypted messaging and multimedia sharing, crafted to mirror Signal's renowned privacy standards. This project exemplifies user-focused design and communication integrity in a simplified, static environment.
+                                <span>
+                                    <details>
+                                        <summary>More...</summary>
+                                        <p>By cloning the Signal app, you can create a platform that prioritizes user privacy and data protection. This clone will offer features like encrypted messaging, voice and video calls, and a user-friendly interface.</p>
+                                    </details>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+
+.projectImage{
+    width: 30%;
+}
+.projectWork{
+    width: 70%;
+}
+.projectWork h3{
+    margin-bottom: 1rem;
+}
+.projectImage img{
+    width: 100%;
+    height: 20rem;
+}
+.idea{
+    margin-right: 2rem;
+    padding: .2rem 1rem;
+    background-color: #d9e7eb;
+    border-radius: .5rem;
+}
+
+
+
+import Bank from '../Assets/Bank.avif'
+import Ploughing from '../Assets/Ploughing.avif'
+import ECommerce from '../Assets/E-Commerce.avif'
+import Blog from '../Assets/Blog.avif'
+import Signal from '../Assets/Signal.png'
