@@ -1,23 +1,31 @@
 import React from 'react';
-import Facebook from '../Assets/fb.png';
 import Instagram from '../Assets/insta.png';
-import Twitter from '../Assets/Group.png';
+import Gmail from '../Assets/Gmail.png'
 import LinkedIn from '../Assets/Linkedin.png';
+import Github from '../Assets/Github.png'
 
 const Footer = () => {
     const year = new Date().getFullYear();
 
     return (
         <>
-            <footer className='text-center fw-bolder mt-3'>
+            <footer className='text-center fw-bolder mt-3' id='Contact'>
                 <div className='d-flex justify-content-center gap-5'>
-                    <img src={Facebook} alt='Facebook'/>
-                    <img src={Instagram} alt='Instagram'/>
-                    <img src={Twitter} alt='Twitter' />
-                    <img src={LinkedIn} alt='LinkedIn'/>
+                    <a href='https://github.com/Thirumeni2811'>                    
+                        <img src={Github} alt='Facebook'/>
+                    </a>
+                    <a href='https://www.instagram.com/_everchamp_'>
+                        <img src={Instagram} alt='Instagram'/>
+                    </a>
+                    <a href='mailto:thirumeni948@gmail.com'>
+                        <img src={Gmail} alt='Gmail' />
+                    </a>
+                    <a href='https://www.linkedin.com/in/thirumeni-m/'>
+                        <img src={LinkedIn} alt='LinkedIn'/>
+                    </a>
                 </div>
                 <br/>
-                <p className='footerText'>Copyright &copy; {year} All rights are reserved </p>
+                <p className='footerText'>Copyright&copy; {year} Thirumeni. All rights reserved </p>
             </footer>
         </>
     );

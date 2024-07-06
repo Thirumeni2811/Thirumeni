@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import './Header.css'
 const Header = (args) => {
     
     const [isOpen, setIsOpen] = useState(false);
@@ -15,21 +16,23 @@ const Header = (args) => {
 
     return (
         <>
-        <Navbar expand="md" className='expand-true container-true p-2 fw-bold' container="md"  {...args} >
-            <NavbarBrand href="/" className='fs-1'>Thirumeni</NavbarBrand>
+        <Navbar expand="md" className='expand-true container-true p-1 fw-bold padding '  {...args} >
+            <NavbarBrand href="/" className='nameSet' >
+                <h1>Thirumeni</h1>
+            </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
-                <Nav className="ms-auto d-flex align-items-start gap-1 fs-5" navbar>
+                <Nav className="ms-auto d-flex align-items-start gap-1 containItems" navbar >
                     <NavItem>
-                        <NavLink href="/components/">Internships</NavLink>
+                        <NavLink href="#Internship">Internships</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">
+                        <NavLink href="#Projects">
                             Projects
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">
+                        <NavLink href="#Contact">
                             Contact
                         </NavLink>
                     </NavItem>

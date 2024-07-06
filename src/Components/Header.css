@@ -1,0 +1,81 @@
+.nameSet h1 {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+.containItems{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .nameSet h1 {
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2.5rem;
+        margin-left: 0rem;
+    }
+    .containItems{
+        font-weight: 800;
+        font-style: normal;
+        font-size: 1rem;
+        margin-right: 0rem;
+        position: absolute;
+        text-align: right;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .nameSet h1 {
+        font-size: 2.7rem;
+        margin-left: 0rem;
+    }
+    .containItems{
+        font-size: 1.1rem;
+        margin-right: 0rem;
+        position: absolute;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nameSet h1 {
+        font-size: 2.85rem;
+        margin-left: 0rem;
+    }
+    .containItems{
+        font-size: 1.1rem;
+        margin-right: 0rem;
+        position: relative;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nameSet h1 {
+        font-size: 3rem;
+        margin-left: 0rem;
+    }
+    .containItems{
+        font-size: 1.3rem;
+        margin-right: 0rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nameSet h1 {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+    .containItems{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+}

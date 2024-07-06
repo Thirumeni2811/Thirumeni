@@ -1,6 +1,196 @@
-.Info .container{
+.Infocontainer{
     padding: 7rem 0rem 3rem 0rem;
     gap: 10rem;
+}
+
+.profile img{
+    height: 20rem;
+    width : 20rem;
+    border-radius: 10rem;
+    margin-left: 1rem;
+}
+.intro button{
+    background-color: #FF6464;
+    border: none;
+    border-radius: 0;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.profile{
+    height: 21rem;
+    width : 21rem;
+    border-radius: 10rem;
+    background-color: #EDF7FA;
+}
+.intro{
+    width: 50%;
+}
+.intro h1{
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+}
+.intro p{
+    margin: 2rem 0rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.intro button:hover {
+    background-color: #EDF7FA;
+    color: #FF6464;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .Infocontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.2rem 0rem 1rem 0rem;
+        gap: 1rem;
+    }
+    .profile {
+        height: 12rem;
+        width: 13rem;
+        border-radius: 6rem;
+        background-color: hwb(194 93% 2%);
+    }
+    .profile img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 6rem;
+        margin-left: 1rem;
+    }
+    .intro {
+        width: 100%;
+        padding: 1.3rem;
+        text-align: center;
+    }
+    .intro button {
+        background-color: #FF6464;
+        border: none;
+        border-radius: 0;
+        padding: .5rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .intro h1 {
+        font-weight: 800;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+    .intro p {
+        margin: 1.5rem 0rem;
+        text-align: justify;
+        font-weight: 400;
+        font-size: 1.05rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .Infocontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem 2rem 2rem 2rem;
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .profile {
+        height: 16rem;
+        width: 17rem;
+        border-radius: 8rem;
+        background-color: hwb(194 93% 2%);
+    }
+    .profile img {
+        height: 16rem;
+        width: 16rem;
+        border-radius: 8rem;
+        margin-left: 0;
+    }
+    .intro {
+        width: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+    .intro button {
+        background-color: #FF6464;
+        border: none;
+        border-radius: 0;
+        padding: .75rem 2rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .intro h1 {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .intro p {
+        margin: 2rem 0rem;
+        text-align: justify;
+        font-weight: 400;
+        font-size: 1.05rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .Infocontainer{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2rem 2rem 2rem;
+        gap: 1rem;
+        margin: 0rem;
+    }
+    .profile{
+        height: 12rem;
+        width : 13rem;
+        border-radius: 6rem;
+        background-color: hwb(194 93% 2%);
+    }
+    .profile img{
+        height: 12rem;
+        width : 12rem;
+        border-radius: 6rem;
+        margin-left: 1rem;
+    }
+    .intro{
+        width: 100%;
+        padding: 1.3rem 0rem;
+        text-align: center;
+    }
+    .intro button{
+        background-color: #FF6464;
+        border: none;
+        border-radius: 0;
+        padding: .5rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .buttonLeft{
+        text-align: left;
+    }
+    .intro h1{
+        font-weight: 800;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        text-align: left;
+    }
+    .intro p{
+        margin: 1.5rem 0rem;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}
+@media screen and (min-width : 992px){
+    .Infocontainer{
+    padding: 5rem 3rem 3rem 3rem;
+    gap: 5rem;
 }
 
 .profile img{
@@ -28,61 +218,38 @@
 }
 .intro h1{
     font-weight: 800;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 2.2rem;
+    text-align: left;
 }
 .intro p{
     margin: 2rem 0rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.1rem;
+    line-height: 1.3rem;
 }
 .intro button:hover {
     background-color: #EDF7FA;
     color: #FF6464;
 }
-
-@media screen and (max-width : 576px) {
-    .Info .container{
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 1.2rem 0rem 1rem 0rem;
-        gap: 1rem;
-    }
-    .profile{
-        height: 12rem;
-        width : 13rem;
-        border-radius: 6rem;
-        background-color: hwb(194 93% 2%);
-    }
-    .profile img{
-        height: 12rem;
-        width : 12rem;
-        border-radius: 6rem;
-        margin-left: 1rem;
+}
+@media screen and (min-width : 1200px){
+    .Infocontainer{
+        padding: 7rem 3rem 3rem 3rem;
+        gap: 10rem;
     }
     .intro{
-        width: 100%;
-        padding: 1.3rem;
-        text-align: center;
-    }
-    .intro button{
-        background-color: #FF6464;
-        border: none;
-        border-radius: 0;
-        padding: .5rem 1.5rem;
-        font-weight: 600;
-        font-size: 1rem;
+        width: 56%;
     }
     .intro h1{
         font-weight: 800;
-        font-size: 1.7rem;
-        line-height: 1.9rem;
+        font-size: 2.9rem;
+        line-height: 2.6rem;
     }
     .intro p{
-        margin: 1.5rem 0rem;
-        text-align: justify;
+        margin: 2rem 0rem;
         font-weight: 400;
-        font-size: 1.05rem;
+        font-size: 1.2rem;
         line-height: 1.3rem;
     }
 }
@@ -95,7 +262,8 @@
     padding: 1rem 7.2rem 3rem 7.2rem;
 }
 .internTopic h2{
-    font-weight: 700;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 800;
     font-size: 2.3rem;
     line-height: 2.2rem;
 }
@@ -129,6 +297,7 @@
 .intern p{
     font-weight: 500;
     font-size: .9rem;
+    text-align: justify;
 }
 
 @media screen and (max-width : 576px) {
@@ -137,51 +306,88 @@
         text-align: center;
     }
     .internTopic h2{
-        font-weight: 800;
         font-size: 1.7rem;
         line-height: 1.9rem;
     }
     .internGrid{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+        margin-top: .5rem;
     }
     .intern{
-        background-color: white;
         margin: 1rem;
-        border-radius: 1rem;
-        width: 90%;
+        width: 92%;
         padding: 1rem;
     }
     .intern h3{
-        font-weight: 800;
         font-size: 1.1rem;
         line-height: 1.9rem;
+        margin: 0;
     }
     .intern h5{
         font-weight: 800;
         font-size: .84rem;
-        line-height: 1rem;
+        margin: 0rem 0rem 0.5rem 0rem;
     }
     .intern h6{
         font-weight: 800;
         font-size: .84rem;
-        line-height: 1rem;
     }
     .intern p{
         font-weight: 400;
         line-height: 1.12rem;
-        text-align: justify;
     }
 }
-@media screen and (max-width : 768px) {
+@media screen and (min-width : 576px) {
     .internContainer{
-        padding: 1rem 2rem 3rem 2rem;
+        padding: 1rem 2rem 2rem 2rem;
         text-align: center;
     }
     .internTopic h2{
-        font-weight: 800;
         font-size: 2rem;
         line-height: 1.9rem;
+        text-align: left;
+    }
+    .internGrid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+    }
+    .intern{
+        margin: 0rem 1rem 1rem 0rem;
+        width: 100%;
+    }
+    .intern h3{
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        margin-bottom: -1rem;
+    }
+    .intern h5{
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: .5rem;
+    }
+    .intern h6{
+        font-weight: 800;
+        font-size: .94rem;
+    }
+    .intern p{
+        font-weight: 400;
+        font-size: 0.93rem;
+        line-height: 1.12rem;
+    }
+}
+@media screen and (min-width : 768px) {
+    .internContainer{
+        padding: 1rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+    .internTopic h2{
+        font-size: 2rem;
+        line-height: 1.9rem;
+        text-align: left;
     }
     .internGrid{
         display: grid;
@@ -189,31 +395,76 @@
         gap: 0;
     }
     .intern{
-        background-color: white;
         margin: 0rem 1rem 1rem 0rem;
-        border-radius: 1rem;
         width: 100%;
-        padding: 1rem;
     }
     .intern h3{
-        font-weight: 800;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         line-height: 1.9rem;
+        margin-bottom: -1rem;
     }
     .intern h5{
         font-weight: 800;
-        font-size: .84rem;
+        font-size: 1.1rem;
         line-height: 1rem;
+        margin-bottom: .5rem;
     }
     .intern h6{
         font-weight: 800;
-        font-size: .84rem;
+        font-size: .96rem;
         line-height: 1rem;
     }
     .intern p{
         font-weight: 400;
         line-height: 1.12rem;
+        font-size: 1rem;
         text-align: justify;
+    }
+}
+@media screen and (min-width : 992px){
+    .internContainer{
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    .internTopic h2{
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+    .internGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .intern{
+        padding: 1rem;
+    }
+    .intern h3{
+        line-height: 3rem;
+    }
+    
+    .intern p{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width : 1200px){
+    .intern{
+        padding: 2.5rem;
+    }
+    .intern h3{
+        font-size: 1.9rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    .internGrid{
+        gap: 3rem;
+    }
+    .intern h5{
+        margin:1rem 0rem;
+    }
+    .intern p{
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
 }
 
@@ -299,6 +550,7 @@
   transform: translateY(-100%);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  cursor: pointer;
 }
 .Article h5:hover {
     background-color: #EDF7FA;
@@ -335,7 +587,7 @@ strong{
 }
     
     
-    @media screen and (max-width : 576px) {
+    @media screen and (max-width : 600px) {
         .projectContainer{
             padding: 1rem 3rem 3rem 3rem;
             text-align: center;
@@ -349,19 +601,109 @@ strong{
             margin: 0 auto;
           }
           .Article:before {
-            top: 10px;
-            bottom: 10px;
             left: 23px;
             right: 23px;
-            top: 100%;
-            content: '';
-            background-color: #edf7facf;
-            -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-            -webkit-transition-delay: 0.25s;
-            transition-delay: 0.25s;
           }
-          
+    }
+
+    @media screen and (min-width : 600px) {
+        .projectContainer{
+            padding: 1rem 2rem 2rem 2rem;
+            text-align: center;
+        }
+        .Article{
+            margin: 0 auto;
+        }
+        .Article img {
+            max-width:83%; 
+            backface-visibility: hidden;
+            margin: 0 auto;
+          }
+          .Article:before {
+            left: 34px;
+            right: 34px;
+          }
+    }
+
+    @media screen and (min-width : 768px) {
+        .projectContainer{
+            padding: 1rem 2rem 2rem 2rem;
+            text-align: center;
+        }
+        .Article img {
+            max-width:87%; 
+          }
+          .Article:before {
+            left: 29px;
+            right: 29px;
+          }
     }
     
+    @media screen and (min-width : 992px) {
+        .projectContainer{
+            padding: 3rem 3rem 3rem 3rem;
+        }
+        .Article img {
+            max-width:90%; 
+          }
+          .Article:before {
+            left: 25px;
+            right: 25px;
+        }
+    }
+    @media screen and (min-width : 1200px) {
+        .projectContainer{
+            padding: 3rem 3rem 3rem 3rem;
+        }
+        .Article img {
+            max-width:95%; 
+          }
+          .Article:before {
+            left: 18px;
+            right: 18px;
+        }
+    }
+    @media screen and (min-width : 1400px) {
+        .Article img {
+            max-width:100%; 
+          }
+          .Article:before {
+            left: 10px;
+            right: 10px;
+        }
+    }
+
     
+
+
+    /* { breakpoint: 400, settings: {slidesToShow: 1, },},
+    { breakpoint: 420, settings: {slidesToShow: 1.1, },},
+    { breakpoint: 440, settings: {slidesToShow: 1.2, },},
+    { breakpoint: 460, settings: {slidesToShow: 1.3, },},
+    { breakpoint: 480, settings: {slidesToShow: 1.4, },},
+    { breakpoint: 500, settings: { slidesToShow: 1.5 } },
+    { breakpoint: 520, settings: { slidesToShow: 1.6 } },
+    { breakpoint: 540, settings: { slidesToShow: 1.7 } },
+    { breakpoint: 560, settings: { slidesToShow: 1.8 } },
+    { breakpoint: 580, settings: { slidesToShow: 1.9 } },
+    { breakpoint: 600, settings: { slidesToShow: 2 } },
+    { breakpoint: 645, settings: { slidesToShow: 2.1 } },
+    { breakpoint: 690, settings: { slidesToShow: 2.2 } },
+    { breakpoint: 735, settings: { slidesToShow: 2.3 } },
+    { breakpoint: 780, settings: { slidesToShow: 2.4 } },
+    { breakpoint: 825, settings: { slidesToShow: 2.5 } },
+    { breakpoint: 870, settings: { slidesToShow: 2.6 } },
+    { breakpoint: 915, settings: { slidesToShow: 2.7 } },
+    { breakpoint: 960, settings: { slidesToShow: 2.8 } },
+    { breakpoint: 1005, settings: { slidesToShow: 2.9 } },
+    { breakpoint: 1050, settings: { slidesToShow: 3 } },
+    { breakpoint: 1095, settings: { slidesToShow: 3.1 } },
+    { breakpoint: 1140, settings: { slidesToShow: 3.2 } },
+    { breakpoint: 1185, settings: { slidesToShow: 3.3 } },
+    { breakpoint: 1230, settings: { slidesToShow: 3.4 } },
+    { breakpoint: 1275, settings: { slidesToShow: 3.5 } },
+    { breakpoint: 1320, settings: { slidesToShow: 3.6 } },
+    { breakpoint: 1365, settings: { slidesToShow: 3.7 } },
+    { breakpoint: 1410, settings: { slidesToShow: 3.8 } },
+    { breakpoint: 1455, settings: { slidesToShow: 3.9 } },
+    { breakpoint: 1500, settings: { slidesToShow: 3.95 } } */

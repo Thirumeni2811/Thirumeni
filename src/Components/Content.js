@@ -36,53 +36,69 @@ const Content = () => {
     );
   };
 
-  const News = ({ data }) => {
-    const settings = {
-  dots: true,
-  infinite: true,
-  initialSlide: 0,
-  slidesToShow: 3.5,
-  slidesToScroll: 1,
-  responsive: [
-    {breakpoint: 400, settings: {slidesToShow: 1, },},
-    {breakpoint: 420, settings: {slidesToShow: 1.1, },},
-    {breakpoint: 440, settings: {slidesToShow: 1.2, },},
-    {breakpoint: 460, settings: {slidesToShow: 1.3, },},
-    {breakpoint: 480, settings: {slidesToShow: 1.4, },},
-    { breakpoint: 500, settings: { slidesToShow: 1.5 } },
-    { breakpoint: 520, settings: { slidesToShow: 1.6 } },
-    { breakpoint: 540, settings: { slidesToShow: 1.7 } },
-    { breakpoint: 560, settings: { slidesToShow: 1.8 } },
-    { breakpoint: 580, settings: { slidesToShow: 1.9 } },
-    { breakpoint: 600, settings: { slidesToShow: 2 } }
-  ],
+  const generateBreakpoints = () => {
+    const breakpoints = [];
+
+    // Breakpoints for 400px to 600px
+    for (let i = 400; i < 600; i += 20) {
+        breakpoints.push({
+            breakpoint: i,
+            settings: {
+                slidesToShow: 1 + 0.1 * ((i - 400) / 20),
+            },
+        });
+    }
+
+    // Breakpoints for 600px to 1500px
+    for (let i = 600; i <= 1500; i += 45) {
+        breakpoints.push({
+            breakpoint: i,
+            settings: {
+                slidesToShow: 2 + 0.1 * ((i - 600) / 45),
+            },
+        });
+    }
+
+    return breakpoints;
 };
 
+const News = ({ data }) => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        initialSlide: 0,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: generateBreakpoints(),
+    };
+
     return (
-      <div className='news'>
         <Slider {...settings}>
-          {data.length > 0 ? data.map((item, index) => (
-            <div key={index}>
-              <Article data={item} />
-            </div>
-          )) : <p>Please add some cards</p>}
+            {data.map((item, index) => (
+                <div key={index}>
+                      <Article data={item} />
+                </div>
+            ))}
         </Slider>
-      </div>
     );
-  };
+};
 
   return (
     <>
       <div className='wholeContainer'>
-        <section className='Info'>
-          <div className='container d-flex align-items-center justify-content-center'>
+        <section className='Info' id='Info'>
+          <div className='Infocontainer d-flex align-items-center justify-content-center'>
             <div className='intro'>
-              <h1>Hi, I am Thirumeni</h1>
+              <h1>Hi, I am Thirumeni Mallieswaran</h1>
               <h1>Front End Development Enthusiast</h1>
               <p>
                 Focused and front end enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
-              <Button className='color-primary'>Download Resume</Button>
+              <div className='buttonLeft'>
+                <a href='https://drive.google.com/file/d/1PfjspAlU_J6BmIb-3wh69GJa4PWQ9qSx/view?usp=sharing'>               
+                   <Button className='color-primary'>Download Resume</Button>
+                </a>
+              </div>
             </div>
             <div className='profile w-30'>
               <img src={Thiru} alt='Thirumeni' />
@@ -90,7 +106,7 @@ const Content = () => {
           </div>
         </section>
 
-        <section className='Internship'>
+        <section className='Internship' id='Internship'>
           <div className='internContainer'>
             <div className='internTopic'>
               <h2>Internships</h2>
@@ -124,7 +140,7 @@ const Content = () => {
           </div>
         </section>
 
-        <section className='Projects'>
+        <section className='Projects' id='Projects'>
           <div className='projectContainer'>
             <div className='internTopic'>
               <h2>Projects</h2>
