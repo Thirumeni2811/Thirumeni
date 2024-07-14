@@ -51,7 +51,7 @@ function a11yProps(index) {
   };
 }
 
-const Bank = () => {
+const Ploughing = () => {
 
   //Accordion
   const [expanded, setExpanded] = useState(false);
@@ -83,7 +83,7 @@ const Bank = () => {
         </header>
 
         <div className='title'>
-          <h2 className='text-center'>Banking Application</h2>
+          <h2 className='text-center'>Trouble Free Ploughing</h2>
         </div>
 
         <main className='m-5'>
@@ -303,4 +303,4 @@ const Bank = () => {
   );
 }
 
-export default Bank;
+export default Ploughing;

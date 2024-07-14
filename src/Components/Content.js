@@ -6,6 +6,8 @@ import Ploughing from '../Assets/Ploughing.jpg'
 import ECommerce from '../Assets/E-Commerce.jpg'
 import Blog from '../Assets/Blog.png'
 import Signal from '../Assets/Signal.png'
+import git from '../Assets/Github.png'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,11 +19,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const Content = () => {
   const cards = [
-    {"image":Bank, "title":"Banking Application", "subtitle":"Mini Project"},
-    {"image":Ploughing, "title":"Trouble Free Ploughing", "subtitle":"Idea"},
-    {"image":ECommerce, "title":"E-Commerce", "subtitle":"Hackathon"},
-    {"image":Blog, "title":"BlogHub", "subtitle":"Mini Project"},
-    {"image":Signal, "title":"Trouble Free Ploughing", "subtitle":"Clone"}
+    {"image":Bank, "title":"Banking Application", "subtitle":"Mini Project", "route":"https://github.com/Thirumeni2811/Banking-Application"},
+    {"image":Ploughing, "title":"Trouble Free Ploughing", "subtitle":"Idea" , "route":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
+    {"image":ECommerce, "title":"E-Commerce", "subtitle":"Hackathon","routes":"https://e-commerce-sable-six.vercel.app/", "route":"https://github.com/Thirumeni2811/E-Commerce"},
+    {"image":Blog, "title":"BlogHub", "subtitle":"Mini Project", "route":"https://github.com/Thirumeni2811/BlogHub" , "routes":"https://bloghub-ashy.vercel.app/"},
+    {"image":Signal, "title":"Trouble Free Ploughing", "subtitle":"Clone", "route":"https://github.com/Thirumeni2811/Signal" , "routes":"https://signalwebclone.vercel.app/"}
   ];
 
   const Article = ({ data }) => {
@@ -30,7 +32,22 @@ const Content = () => {
         <img src={data.image} alt={data.title} />
         <figcaption>
           <h3>{data.title}</h3>
-          <h5>{data.subtitle}</h5>
+          <h5>
+            {data.subtitle}
+          </h5>
+            <h3 className='mt-2'>
+              <a href={data.route} target="_blank" rel="noopener noreferrer">
+                <img src={git} alt='GitHub' width='30px' />
+              </a>
+            </h3>
+            {data.routes && (
+              <h3 className='mt-2'>
+                <a href={data.routes} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                  <PlayArrowIcon style={{ marginRight: '0.5rem' }} />
+                  <span style={{ fontSize: '1rem', color: 'inherit' }}>Live Preview</span>
+                </a>
+              </h3>
+            )}
         </figcaption>
       </figure>
     );
@@ -95,7 +112,7 @@ const News = ({ data }) => {
                 Focused and front end enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
-                <a href='https://drive.google.com/file/d/1PfjspAlU_J6BmIb-3wh69GJa4PWQ9qSx/view?usp=sharing'>               
+                <a href='https://drive.google.com/file/d/1PfjspAlU_J6BmIb-3wh69GJa4PWQ9qSx/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
                    <Button className='color-primary'>Download Resume</Button>
                 </a>
               </div>
@@ -149,6 +166,10 @@ const News = ({ data }) => {
                 <News data={cards} />
             </div>
           </div>
+        </section>
+
+        <section className='Contact' id='Contact'>
+          
         </section>
       </div>
     </>

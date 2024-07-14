@@ -38,7 +38,7 @@
     font-size: 1.1rem;
 }
 .intro button:hover {
-    background-color: #EDF7FA;
+    background-color: #edf7fa;
     color: #FF6464;
 }
 
@@ -138,12 +138,12 @@
 }
 
 @media screen and (min-width : 768px) {
-    .Infocontainer{
+    .Infocontainer {
         display: flex;
         flex-direction: row;
-        padding: 1rem 2rem 2rem 2rem;
         gap: 1rem;
-        margin: 0rem;
+        margin: 0;
+        padding: 1rem 2rem 2rem;
     }
     .profile{
         height: 12rem;
@@ -158,7 +158,7 @@
         margin-left: 1rem;
     }
     .intro{
-        width: 100%;
+        width: 78%;
         padding: 1.3rem 0rem;
         text-align: center;
     }
@@ -235,16 +235,28 @@
 }
 @media screen and (min-width : 1200px){
     .Infocontainer{
-        padding: 7rem 3rem 3rem 3rem;
+        padding: 3rem 3rem 3rem 3rem;
         gap: 10rem;
     }
     .intro{
-        width: 56%;
+        width: 53%;
     }
     .intro h1{
         font-weight: 800;
         font-size: 2.9rem;
         line-height: 2.6rem;
+    }
+    .profile{
+        height: 26rem;
+        width : 26rem;
+        border-radius: 13rem;
+        background-color: #EDF7FA;
+    }
+    .profile img{
+        height: 25rem;
+        width : 25rem;
+        border-radius: 12rem;
+        margin-left: 1rem;
     }
     .intro p{
         margin: 2rem 0rem;
@@ -337,6 +349,7 @@
     .intern p{
         font-weight: 400;
         line-height: 1.12rem;
+        padding: 1rem;
     }
 }
 @media screen and (min-width : 576px) {
@@ -543,6 +556,7 @@
   font-weight: normal;
   background-color: #ff6464;
   padding: .5rem 1.5rem;
+  color: #EDF7FA;
   font-weight: 600;
   font-size: 1.3rem;  
   border-radius: .3rem;
@@ -552,6 +566,10 @@
   transition-delay: 0s;
   cursor: pointer;
 }
+.Article h5 a {
+    color: inherit; 
+    text-decoration: none; 
+  }
 .Article h5:hover {
     background-color: #EDF7FA;
     color: #FF6464;

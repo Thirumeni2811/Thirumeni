@@ -12,12 +12,11 @@
     font-size: 1.5rem;
     margin-right: 2rem;
 }
-/* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
     .nameSet h1 {
         font-weight: 800;
         font-style: normal;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-left: 0rem;
     }
     .containItems{
