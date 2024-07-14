@@ -21,9 +21,9 @@ const Content = () => {
   const cards = [
     {"image":Bank, "title":"Banking Application", "subtitle":"Mini Project", "route":"https://github.com/Thirumeni2811/Banking-Application"},
     {"image":Ploughing, "title":"Trouble Free Ploughing", "subtitle":"Idea" , "route":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
-    {"image":ECommerce, "title":"E-Commerce", "subtitle":"Hackathon","routes":"https://e-commerce-sable-six.vercel.app/", "route":"https://github.com/Thirumeni2811/E-Commerce"},
+    {"image":ECommerce, "title":"E-Commerce", "subtitle":"Hackathon", "route":"https://github.com/Thirumeni2811/E-Commerce"},
     {"image":Blog, "title":"BlogHub", "subtitle":"Mini Project", "route":"https://github.com/Thirumeni2811/BlogHub" , "routes":"https://bloghub-ashy.vercel.app/"},
-    {"image":Signal, "title":"Trouble Free Ploughing", "subtitle":"Clone", "route":"https://github.com/Thirumeni2811/Signal" , "routes":"https://signalwebclone.vercel.app/"}
+    {"image":Signal, "title":"Trouble Free Ploughing", "subtitle":"Clone", "route":"https://github.com/Thirumeni2811/Signal"}
   ];
 
   const Article = ({ data }) => {
