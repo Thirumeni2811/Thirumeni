@@ -12,7 +12,7 @@
 .intro button{
     background-color: #FF6464;
     border: none;
-    border-radius: 0;
+    border-radius: .3rem;
     padding: .5rem 1.5rem;
     font-weight: 600;
     font-size: 1.3rem;
@@ -71,7 +71,6 @@
     .intro button {
         background-color: #FF6464;
         border: none;
-        border-radius: 0;
         padding: .5rem 1.5rem;
         font-weight: 600;
         font-size: 1rem;
@@ -118,7 +117,6 @@
     .intro button {
         background-color: #FF6464;
         border: none;
-        border-radius: 0;
         padding: .75rem 2rem;
         font-weight: 600;
         font-size: 1.2rem;
@@ -165,7 +163,6 @@
     .intro button{
         background-color: #FF6464;
         border: none;
-        border-radius: 0;
         padding: .5rem 1.5rem;
         font-weight: 600;
         font-size: 1rem;
@@ -202,7 +199,6 @@
 .intro button{
     background-color: #FF6464;
     border: none;
-    border-radius: 0;
     padding: .5rem 1.5rem;
     font-weight: 600;
     font-size: 1.3rem;

@@ -16,6 +16,7 @@ import './Content.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Contact from './Contact'
 
 const Content = () => {
   const cards = [
@@ -23,7 +24,7 @@ const Content = () => {
     {"image":Ploughing, "title":"Trouble Free Ploughing", "subtitle":"Idea" , "route":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
     {"image":ECommerce, "title":"E-Commerce", "subtitle":"Hackathon", "route":"https://github.com/Thirumeni2811/E-Commerce"},
     {"image":Blog, "title":"BlogHub", "subtitle":"Mini Project", "route":"https://github.com/Thirumeni2811/BlogHub" , "routes":"https://bloghub-ashy.vercel.app/"},
-    {"image":Signal, "title":"Trouble Free Ploughing", "subtitle":"Clone", "route":"https://github.com/Thirumeni2811/Signal"}
+    {"image":Signal, "title":"Signal", "subtitle":"Clone", "route":"https://github.com/Thirumeni2811/Signal"}
   ];
 
   const Article = ({ data }) => {
@@ -168,9 +169,8 @@ const News = ({ data }) => {
           </div>
         </section>
 
-        <section className='Contact' id='Contact'>
-          
-        </section>
+        <Contact />
+
       </div>
     </>
   )
