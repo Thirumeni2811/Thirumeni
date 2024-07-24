@@ -24,6 +24,9 @@ const Header = (args) => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ms-auto d-flex align-items-start gap-1 containItems" navbar >
                     <NavItem>
+                        <NavLink href="#Education">Education</NavLink>
+                    </NavItem>
+                    <NavItem>
                         <NavLink href="#Internship">Internships</NavLink>
                     </NavItem>
                     <NavItem>
@@ -34,6 +37,11 @@ const Header = (args) => {
                     <NavItem>
                         <NavLink href="#Contact">
                             Contact
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="#Skills">
+                            Skills
                         </NavLink>
                     </NavItem>
                 </Nav>

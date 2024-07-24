@@ -415,7 +415,7 @@
     .intern h5{
         font-weight: 800;
         font-size: 1.1rem;
-        line-height: 1rem;
+        line-height: 1.5rem;
         margin-bottom: .5rem;
     }
     .intern h6{
@@ -474,6 +474,16 @@
         font-weight: 400;
         font-size: 1.1rem;
         line-height: 1.3rem;
+    }
+}
+
+
+/* Education */
+@media screen and (min-width : 992px){
+    .educate h3{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        margin-bottom: .3rem;
     }
 }
 
@@ -685,6 +695,14 @@ strong{
             left: 10px;
             right: 10px;
         }
+    }
+
+
+    /* Skills */
+    .Skills img{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
     }
 
     

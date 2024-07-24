@@ -17,6 +17,18 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Contact from './Contact'
+import Java from '../Assets/Program/java.jpg'
+import Python from '../Assets/Program/python.jpg'
+import JavaScript from '../Assets/Program/js.jpg'
+import html from '../Assets/Program/HTML.png'
+import css from '../Assets/Program/CSS.png'
+import react from '../Assets/Program/React.png'
+import jasper from '../Assets/Program/jasper.png'
+import sql from '../Assets/Program/sql.png'
+import gitt from '../Assets/Program/git.png'
+import mui from '../Assets/Program/mui.png'
+import tailwind from '../Assets/Program/tailwind.png'
+import bootstrap from '../Assets/Program/bootstrap.png'
 
 const Content = () => {
   const cards = [
@@ -113,7 +125,7 @@ const News = ({ data }) => {
                 Focused and front end enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
-                <a href='https://drive.google.com/file/d/1PfjspAlU_J6BmIb-3wh69GJa4PWQ9qSx/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
+                <a href='https://drive.google.com/file/d/1v2zgPOQWtE2Sm8I_qH4W0NzDjg_n2erm/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
                    <Button className='color-primary'>Download Resume</Button>
                 </a>
               </div>
@@ -123,6 +135,36 @@ const News = ({ data }) => {
             </div>
           </div>
         </section>
+
+        <section className='Internship bg-[#d3e9f0]' id='Education'>
+          <div className='internContainer'>
+            <div className='internTopic'>
+              <h2>Education</h2>
+            </div>
+            <div className='internGrid grid lg:grid-cols-3'>
+              <div className='intern educate'>
+                <h3>B.Tech Information Technology</h3>
+                <h5>Nandha Engineering Collge - Erode</h5>
+                <h5>October 2021 - Present</h5>
+                <h6>CGPA - 8.5(upto 5th sem)</h6>
+              </div>
+              <div className='intern educate'>
+                <h3>HSC - 12th Standard</h3>
+                <h5>Nanjappa MPL Boys Higher Secondary School - Tiruppur</h5>
+                <h5>2020-2021</h5>
+                <h6>91.25%</h6>
+              </div>
+              <div className='intern educate'>
+                <h3>SSLC - 10th Standard</h3>
+                <h5>Government High School - Tiruppur</h5>
+                <h5>2018-2019</h5>
+                <h6>89%</h6>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
 
         <section className='Internship' id='Internship'>
           <div className='internContainer'>
@@ -165,6 +207,49 @@ const News = ({ data }) => {
             </div>
             <div className='mt-4'>
                 <News data={cards} />
+            </div>
+          </div>
+        </section>
+
+        <section className='Internship' id='Skills'>
+          <div className='internContainer'>
+            <div className='internTopic'>
+              <h2>Skills</h2>
+            </div>
+            <div className='internGrid'>
+              <div className='intern'>
+                <h3>Programming Languages</h3>
+                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4'>
+                  <img src={Python} alt='Python'/>
+                  <img src={Java} alt='Java'/>
+                  <img src={JavaScript} alt='JavaScript'/>
+                </div>
+              </div>
+              <div className='intern'>
+                <h3>Web Tools</h3>
+                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4'>
+                  <img src={html} alt='HTML'/>
+                  <img src={css} alt='CSS'/>
+                  <img src={react} alt='React Js'/>
+                </div>
+              </div>
+              <div className='intern'>
+                <h3>Database and Tools</h3>
+                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4 '>
+                  <img src={sql} alt='SQL'/>
+                  <img src={jasper} alt='Jasper'/>
+                  <img src={gitt} alt='JavaScript'/>
+                </div>
+              </div>
+              <div className='intern'>
+                <h3>Frameworks</h3>
+                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4'>
+                  <img src={bootstrap} alt='bootstrap'/>
+                  <img src={mui} alt='Material UI'/>
+                  <img src={tailwind} alt='Tailwind CSS'/>
+                </div>
+              </div>
+  
             </div>
           </div>
         </section>
