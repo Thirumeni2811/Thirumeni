@@ -120,9 +120,9 @@ const News = ({ data }) => {
           <div className='Infocontainer d-flex align-items-center justify-content-center'>
             <div className='intro'>
               <h1>Hi, I am Thirumeni Mallieswaran</h1>
-              <h1>Front End Development Enthusiast</h1>
+              <h1>Full Stack Developer</h1>
               <p>
-                Focused and front end enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
+                Focused and MERN stack developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
                 <a href='https://drive.google.com/file/d/1YsEWNHwsBZcXFfHQqfIavAyFNbk_RB57/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
