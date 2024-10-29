@@ -43,13 +43,13 @@ const Content = () => {
     {"image":Game, "title":"Rock Paper Scissors", "subtitle":"Game", "route":"https://github.com/Thirumeni2811/Rock-Paper-Scissor" , "routes":"https://rock-paper-scissor-swart-nu.vercel.app/"},
   ];
 
-  const Certificates = [
-    {"image":Bank, "title":"Java Courses", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
-    {"image":Ploughing, "title":"Privacy and Security in Online Social Media", "subtitle":"NPTEL" , "routes":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
-    {"image":Bank, "title":"AI Primer", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
-    {"image":Blog, "title":"Front End Development", "subtitle":"VCodas", "route":"https://github.com/Thirumeni2811/BlogHub"},
-    {"image":Bank, "title":"Agile Scrum", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
-  ];
+  // const Certificates = [
+  //   {"image":Bank, "title":"Java Courses", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+  //   {"image":Ploughing, "title":"Privacy and Security in Online Social Media", "subtitle":"NPTEL" , "routes":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
+  //   {"image":Bank, "title":"AI Primer", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+  //   {"image":Blog, "title":"Front End Development", "subtitle":"VCodas", "route":"https://github.com/Thirumeni2811/BlogHub"},
+  //   {"image":Bank, "title":"Agile Scrum", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+  // ];
 
   const Article = ({ data }) => {
     return (
@@ -279,7 +279,7 @@ const News = ({ data }) => {
         </section>
 
         {/* Projects */}
-        <section className='Projects' id='Projects'>
+        {/* <section className='Projects' id='Projects'>
           <div className='projectContainer'>
             <div className='internTopic'>
               <h2>Certificates</h2>
@@ -288,7 +288,7 @@ const News = ({ data }) => {
                 <News data={Certificates} />
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Contact />
 
