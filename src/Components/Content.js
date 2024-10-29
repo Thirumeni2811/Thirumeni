@@ -22,9 +22,13 @@ import Python from '../Assets/Program/python.jpg'
 import JavaScript from '../Assets/Program/js.jpg'
 import html from '../Assets/Program/HTML.png'
 import css from '../Assets/Program/CSS.png'
+import rest from '../Assets/Program/Rest.jpeg'
 import react from '../Assets/Program/React.png'
+import express from '../Assets/Program/express.png'
+import node from '../Assets/Program/node.png'
 import jasper from '../Assets/Program/jasper.png'
-import sql from '../Assets/Program/sql.png'
+import mySQL from '../Assets/Program/mySQL.png'
+import mongoDB from '../Assets/Program/mongoDB.png'
 import gitt from '../Assets/Program/git.png'
 import mui from '../Assets/Program/mui.png'
 import tailwind from '../Assets/Program/tailwind.png'
@@ -39,25 +43,36 @@ const Content = () => {
     {"image":Game, "title":"Rock Paper Scissors", "subtitle":"Game", "route":"https://github.com/Thirumeni2811/Rock-Paper-Scissor" , "routes":"https://rock-paper-scissor-swart-nu.vercel.app/"},
   ];
 
+  const Certificates = [
+    {"image":Bank, "title":"Java Courses", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+    {"image":Ploughing, "title":"Privacy and Security in Online Social Media", "subtitle":"NPTEL" , "routes":"https://github.com/Thirumeni2811/Trouble-Free-Ploughing-" },
+    {"image":Bank, "title":"AI Primer", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+    {"image":Blog, "title":"Front End Development", "subtitle":"VCodas", "route":"https://github.com/Thirumeni2811/BlogHub"},
+    {"image":Bank, "title":"Agile Scrum", "subtitle":"Infosys SpringBoard", "routes":"https://github.com/Thirumeni2811/Banking-Application"},
+  ];
+
   const Article = ({ data }) => {
     return (
       <figure className="Article">
         <img src={data.image} alt={data.title} />
         <figcaption>
-          <h3>{data.title}</h3>
+          <h3 className='text-2xl'>{data.title}</h3>
           <h5>
             {data.subtitle}
           </h5>
-            <h3 className='mt-2'>
-              <a href={data.route} target="_blank" rel="noopener noreferrer">
-                <img src={git} alt='GitHub' width='30px' />
-              </a>
-            </h3>
+            {data.route && (
+              <h3 className='mt-2'>
+                <a href={data.route} target="_blank" rel="noopener noreferrer">
+                  <img src={git} alt='GitHub' width='30px' />
+                </a>
+              </h3>
+            )}
+            
             {data.routes && (
               <h3 className='mt-2'>
                 <a href={data.routes} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                   <PlayArrowIcon style={{ marginRight: '0.5rem' }} />
-                  <span style={{ fontSize: '1rem', color: 'inherit' }}>Live Preview</span>
+                  <span style={{ fontSize: '1rem', color: 'inherit' }}>Preview</span>
                 </a>
               </h3>
             )}
@@ -116,6 +131,8 @@ const News = ({ data }) => {
   return (
     <>
       <div className='wholeContainer'>
+
+        {/* Hero section */}
         <section className='Info' id='Info'>
           <div className='Infocontainer d-flex align-items-center justify-content-center'>
             <div className='intro'>
@@ -125,7 +142,7 @@ const News = ({ data }) => {
                 Focused and MERN stack developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
-                <a href='https://drive.google.com/file/d/1XpBKugqs7VW852-llaCKrZ3awpm3CzlU/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
+                <a href='https://drive.google.com/file/d/1AWkJLAgtUkhik3_oi2rl8y19MYElxjHG/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
                    <Button className='color-primary'>Download Resume</Button>
                 </a>
               </div>
@@ -136,6 +153,7 @@ const News = ({ data }) => {
           </div>
         </section>
 
+        {/* Education */}
         <section className='Internship bg-[#d3e9f0]' id='Education'>
           <div className='internContainer'>
             <div className='internTopic'>
@@ -146,7 +164,7 @@ const News = ({ data }) => {
                 <h3>B.Tech Information Technology</h3>
                 <h5>Nandha Engineering Collge - Erode</h5>
                 <h5>October 2021 - Present</h5>
-                <h6>CGPA - 8.5(upto 5th sem)</h6>
+                <h6>CGPA - 8.5(upto 6th sem)</h6>
               </div>
               <div className='intern educate'>
                 <h3>HSC - 12th Standard</h3>
@@ -165,7 +183,7 @@ const News = ({ data }) => {
           </div>
         </section>
 
-
+        {/* Internship */}
         <section className='Internship' id='Internship'>
           <div className='internContainer'>
             <div className='internTopic'>
@@ -199,7 +217,8 @@ const News = ({ data }) => {
             </div>
           </div>
         </section>
-
+        
+        {/* Projects */}
         <section className='Projects' id='Projects'>
           <div className='projectContainer'>
             <div className='internTopic'>
@@ -211,6 +230,7 @@ const News = ({ data }) => {
           </div>
         </section>
 
+        {/* Skills */}
         <section className='Internship' id='Skills'>
           <div className='internContainer'>
             <div className='internTopic'>
@@ -226,30 +246,46 @@ const News = ({ data }) => {
                 </div>
               </div>
               <div className='intern'>
-                <h3>Web Tools</h3>
+                <h3>Web Technologies</h3>
                 <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4'>
                   <img src={html} alt='HTML'/>
                   <img src={css} alt='CSS'/>
-                  <img src={react} alt='React Js'/>
+                  <img src={rest} alt='restAPI'/>
                 </div>
               </div>
               <div className='intern'>
                 <h3>Database and Tools</h3>
                 <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4 '>
-                  <img src={sql} alt='SQL'/>
+                  <img src={mySQL} alt='mySQL'/>
+                  <img src={mongoDB} alt='mongoDB'/>
                   <img src={jasper} alt='Jasper'/>
                   <img src={gitt} alt='JavaScript'/>
                 </div>
               </div>
               <div className='intern'>
-                <h3>Frameworks</h3>
-                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4'>
-                  <img src={bootstrap} alt='bootstrap'/>
+                <h3>Frameworks & Libraries</h3>
+                <div className='Skills flex flex-wrap justify-center sm:mt-8 xs:mt-3  gap-4'>
                   <img src={mui} alt='Material UI'/>
                   <img src={tailwind} alt='Tailwind CSS'/>
+                  <img src={bootstrap} alt='Bootstrap'/>
+                  <img src={react} alt='React Js'/>
+                  <img src={express} alt='Express JS'/>
+                  <img src={node} alt='Node Js'/>
                 </div>
               </div>
   
+            </div>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className='Projects' id='Projects'>
+          <div className='projectContainer'>
+            <div className='internTopic'>
+              <h2>Certificates</h2>
+            </div>
+            <div className='mt-4'>
+                <News data={Certificates} />
             </div>
           </div>
         </section>

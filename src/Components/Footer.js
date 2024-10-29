@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className='text-center fw-bolder mt-3' id='Contact'>
+            <footer className='text-center fw-bolder my-3' id='Contact'>
                 <div className='d-flex justify-content-center gap-5'>
                     <a href='https://github.com/Thirumeni2811' target='_blank' rel='noopener noreferrer'>                    
                         <img src={Github} alt='Facebook'/>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href='mailto:thirumeni948@gmail.com'  target='_blank' rel='noopener noreferrer'>
                         <img src={Gmail} alt='Gmail' />
                     </a>
-                    <a href='https://www.linkedin.com/in/thirumeni-m/' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://www.linkedin.com/in/thirumeni-ms/' target='_blank' rel='noopener noreferrer'>
                         <img src={LinkedIn} alt='LinkedIn'/>
                     </a>
                 </div>
