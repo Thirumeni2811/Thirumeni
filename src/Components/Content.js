@@ -255,7 +255,7 @@ const News = ({ data }) => {
               </div>
               <div className='intern'>
                 <h3>Database and Tools</h3>
-                <div className='Skills flex justify-center sm:mt-8 xs:mt-3  gap-4 '>
+                <div className='Skills flex xs:flex-wrap justify-center sm:mt-8 xs:mt-3  gap-4 '>
                   <img src={mySQL} alt='mySQL'/>
                   <img src={mongoDB} alt='mongoDB'/>
                   <img src={jasper} alt='Jasper'/>
