@@ -211,8 +211,8 @@ const News = ({ data }) => {
               <div className='intern'>
                 <h3>IT Boomi Innovations - Tiruppur</h3>
                 <h5>3 June 2024 - Present | Full Stack Developer</h5>
-                <h6>Project - Signal Clone</h6>
-                <p>In my full stack development internship focusing on the MERN stack, I am currently concentrating on front-end development as I am new to this field. Over the one-year period of the internship, I plan to expand my skills to include backend development and various frameworks. This approach allows me to build a solid foundation before delving into more advanced aspects of full stack development.</p>
+                <h6>Project - Signal Clone | Rock Paper Scissors</h6>
+                <p>In my full stack development internship focusing on the MERN stack, I am actively working on both front-end and back-end development, including database management. As I build a solid foundation in these areas, I plan to further expand my skills by learning cloud technologies. This approach allows me to gain comprehensive experience in full stack development and prepare for more advanced roles in the future.</p>
               </div>
             </div>
           </div>
