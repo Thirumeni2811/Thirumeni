@@ -142,7 +142,7 @@ const News = ({ data }) => {
                 Focused and MERN stack developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
-                <a href='https://drive.google.com/file/d/1AWkJLAgtUkhik3_oi2rl8y19MYElxjHG/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
+                <a href='https://drive.google.com/file/d/1OjkfFdXJZQT3YE7mLeVV58vYJQ1AsROC/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
                    <Button className='color-primary'>Download Resume</Button>
                 </a>
               </div>
