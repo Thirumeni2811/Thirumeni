@@ -14,9 +14,9 @@ const Footer = () => {
                     <a href='https://github.com/Thirumeni2811' target='_blank' rel='noopener noreferrer'>                    
                         <img src={Github} alt='Facebook'/>
                     </a>
-                    <a href='https://www.instagram.com/_everchamp_' target='_blank' rel='noopener noreferrer'>
+                    {/* <a href='https://www.instagram.com/_everchamp_' target='_blank' rel='noopener noreferrer'>
                         <img src={Instagram} alt='Instagram'/>
-                    </a>
+                    </a> */}
                     <a href='mailto:thirumeni948@gmail.com'  target='_blank' rel='noopener noreferrer'>
                         <img src={Gmail} alt='Gmail' />
                     </a>
