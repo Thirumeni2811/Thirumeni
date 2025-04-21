@@ -142,7 +142,7 @@ const News = ({ data }) => {
                 Focused and MERN stack developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to few projects in front end, my love for these domains came into being.
               </p>
               <div className='buttonLeft'>
-                <a href='https://drive.google.com/file/d/1nb8k1QMOxZrK0q3_-l9y7d9Nr8fAoYrV/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
+                <a href='https://drive.google.com/file/d/17X9X1zi14BsOvgEkI-8LtDMpp861xt6H/view?usp=sharing' target='_blank' rel='noopener noreferrer'>               
                    <Button className='color-primary'>Download Resume</Button>
                 </a>
               </div>
@@ -211,8 +211,19 @@ const News = ({ data }) => {
               <div className='intern'>
                 <h3>IT Boomi Innovations - Tiruppur</h3>
                 <h5>3 June 2024 - Present | Full Stack Developer</h5>
-                <h6>Project - Signal Clone | Rock Paper Scissors</h6>
-                <p>In my full stack development internship focusing on the MERN stack, I am actively working on both front-end and back-end development, including database management. As I build a solid foundation in these areas, I plan to further expand my skills by learning cloud technologies. This approach allows me to gain comprehensive experience in full stack development and prepare for more advanced roles in the future.</p>
+                <h6>MERN | Problem Solving | Admin Dashboard</h6>
+                <h6>CRUD | Authentication | Analytics | State Management</h6>
+                <p>During my full stack development internship focusing on the MERN stack, I initially concentrated on front-end development to build a strong foundation, as I was new to the field. Over time, I expanded my skills to include backend development and explored various frameworks and tools. This strategic progression allowed me to gain a comprehensive understanding of the full stack development lifecycle — from designing intuitive user interfaces to building robust server-side logic and managing databases.</p>
+                <div className='flex flex-wrap gap-3 justify-center'>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>React JS</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Express JS</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Node JS</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>MongoDB</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Tailwind CSS</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Material UI</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Restful API</div>
+                  <div className='bg-[#d3e9f0] px-4 py-1 rounded-xl font-bold'>Firebase</div>
+                </div>
               </div>
             </div>
           </div>
